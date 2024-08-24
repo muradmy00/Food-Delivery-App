@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import { food_list } from "../assets/assets";
 import Cart from "../pages/Cart/Cart";
 
@@ -8,6 +8,9 @@ const StoreContextProvider = (props) => {
 
 
     const [cartItems,setCartItem] = useState({});
+
+    const [search, setSearch] = useState('');
+    const [showSearch, setShowSearch] = useState(false);
 
 
     const addToCart = (itemId) => {
@@ -65,7 +68,11 @@ const StoreContextProvider = (props) => {
         addToCart,
         setCartItem,
         removeFromCart,
-        getTotalCartAmount
+        getTotalCartAmount, 
+        search,
+        setSearch,
+        showSearch,
+        setShowSearch
     }
 
     return (

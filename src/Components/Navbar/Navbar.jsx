@@ -9,6 +9,7 @@ const Navbar = ({ setShowLogin }) => {
     const [menu,setMenu] = useState("Home");
 
   const { getTotalCartAmount } = useContext(StoreContext);
+  const { setShowSearch } = useContext(StoreContext);
 
 
   return (
@@ -29,7 +30,7 @@ const Navbar = ({ setShowLogin }) => {
 
     <div className="navbar-right">
 
-     <img className='search' src={assets.search_icon} alt="" />
+        <img onClick={() => setShowSearch(true)} className='search w-5 cursor-pointer' src={assets.search_icon} alt="" />
      
 
     <div className="navbar-search-icon">
