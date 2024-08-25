@@ -32,9 +32,15 @@ const LoginPopup = ({ setShowLogin }) => {
 
     <input type="email" placeholder='Your Email' required/>
     
+    <div>
+
+    <input  onChange={handlepassword} type={showpassword ? "text" : "password"} placeholder='Your Password' required />
+    
     <div className='in'>
 
-    <input onChange={handlepassword} type={showpassword ? "text" : "password"} placeholder='Your Password' required />{showpassword ? <i className="fa-solid fa-eye" onClick={handleshowpassword}></i> : <i className="fa-solid fa-eye-slash" onClick={handleshowpassword}></i>}
+    <p className='p-2'>Show Password</p>{showpassword ? <i className="fa-solid fa-eye" onClick={handleshowpassword}></i> : <i className="fa-solid fa-eye-slash" onClick={handleshowpassword}></i>}
+        
+    </div>
 
     </div>
 

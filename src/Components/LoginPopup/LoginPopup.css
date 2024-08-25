@@ -78,16 +78,16 @@
 .in{
    
     display: flex;
-    align-items: center;
-    margin: auto;
-    border-radius: 6px;
+    flex-direction: row;
     position: relative;
-    left: -23px;
 
 }
 i{
-    
-    margin: 0px -20px;
+    position: absolute;
+    margin: 0px 2px;
+    bottom: 3px;
+    left: 110px;
+    padding: 5px;
     
 
 }
