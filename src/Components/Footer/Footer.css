@@ -39,13 +39,14 @@
     color: #fff;
 }
 
-.footer-social-icons img{
+.footer-social-icons{
 
     width: 40px;
     margin-right: 15px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    gap: 5px;
 
 }
 

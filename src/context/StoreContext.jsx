@@ -10,7 +10,7 @@ const StoreContextProvider = (props) => {
     const [cartItems,setCartItem] = useState({});
 
     const [search, setSearch] = useState('');
-    const [showSearch, setShowSearch] = useState(false);
+
 
 
     const addToCart = (itemId) => {
@@ -70,9 +70,7 @@ const StoreContextProvider = (props) => {
         removeFromCart,
         getTotalCartAmount, 
         search,
-        setSearch,
-        showSearch,
-        setShowSearch
+        setSearch
     }
 
     return (

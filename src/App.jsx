@@ -6,7 +6,6 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from "./Components/Footer/Footer"
 import { useState } from "react"
 import LoginPopup from "./Components/LoginPopup/LoginPopup"
-import SearchBar from "./Components/SearchBar"
 
 
 
@@ -26,7 +25,7 @@ const App = () => {
     <div className="app">
       
       <Navbar setShowLogin={setShowLogin}/>
-      <SearchBar/>
+    
       <Routes>
 
       < Route path='/' element={<Home/>} />
