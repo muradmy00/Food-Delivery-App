@@ -11,7 +11,7 @@
 
 .login-popup-container{
     place-self: center;
-    width: max(23vw,330px);
+    width: 330px;
     color: #808080;
     background-color: #fff;
     display: flex;
@@ -58,6 +58,7 @@
     background-color: rgb(157, 12, 12);
     font-size: 15px;
     cursor: pointer;
+    width: 250px;
 }
 
 .login-popup-condition{
